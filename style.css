@@ -18,7 +18,23 @@ body {
     padding: 0;
     border: none;
     height: 10vh;
+    position:sticky;
+    top: 0;
+    z-index: 9999;
 }
+
+.footer {
+    width: 100%;
+    background-color: #1F1C1C;
+    color: white;
+    text-align: center;
+    font-family: Verdana, sans-serif, Tahoma;
+    padding-bottom: .25%;
+    padding-top: .25%;
+    font-size: 100%;
+    position:fixed;
+    bottom: 0;
+ }
 
 .resume, .name, .portfolio {
     width: 15%;
@@ -61,7 +77,7 @@ body {
     position: absolute;
     top: 1%;
     left: 40%;
-    transition: .7s;
+    transition: .4s;
 }
 
 .my-name-white:hover, .resume-text-white:hover, .portfolio-text-white:hover {
@@ -168,24 +184,24 @@ body {
     overflow: hidden;
 }
 
-.ir1-item1, .ir1-item2, .ir1-item3 {
-    margin-top: 0%;
+.ir1-item1, .ir1-item2 {
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .ir1-item1 {
     
     justify-content: left;
     display: flex;
-    width: 30%;
-    height: auto;
+    width: 45%;
+    height: 100%;
 
     transition: 1s;
 }
 
 .ir1-item2 {
-    width: 60%;
-    margin-top: 2%;
-    margin-bottom: 4%;
+    width: 55%;
+    padding: 2%;
     font-size: 150%;
     text-align: center;
     color: #fff;
@@ -202,7 +218,5 @@ body {
 }
 
 .pfp {
-    width: 80%;
-    height: auto;
-    clip-path: ellipse(100% 90% at left);
+    width: 100%;
 }
