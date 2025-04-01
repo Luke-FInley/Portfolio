@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     border: none;
-    height: 6%;
+    height: 10vh;
 }
 
 .resume, .name, .portfolio {
@@ -34,14 +34,56 @@ body {
     font-size: 200%;
     cursor: pointer;
     transition: .4s;
-    opacity: .4;
     text-align: center;
+    /* border: red solid 1px; */
 }
 
-.portfolio:hover, .resume:hover, .name:hover{
-    opacity: 1;
-    color: rgb(255, 255, 255);
+.my-name, .resume-text, .portfolio-text {
+    width: 20%;
+    animation: rainbow-name 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 1%;
+    left: 40%;
 }
+
+@keyframes rainbow-name {
+    from {filter: hue-rotate(0deg);}
+    to {filter: hue-rotate(360deg);}
+}
+
+.my-name-white, .resume-text-white, .portfolio-text-white {
+    width: 20%;
+    animation: rainbow-name 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    transition: .7s;
+}
+
+.my-name-white:hover, .resume-text-white:hover, .portfolio-text-white:hover {
+    opacity: 0;
+}
+
+.name {
+    width: 20%;
+}
+
+.resume-text, .resume-text-white {
+    left: 70%;
+    transform: scale(.7);
+}
+
+.portfolio-text, .portfolio-text-white {
+    left: 10%;
+    transform: scale(.7);
+
+}
+
+
 
 .active {
     opacity: 1;
@@ -119,7 +161,7 @@ body {
     overflow: hidden;
 }
 
-.index-row-one {
+.index-row-one, .index-row-two {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -127,125 +169,40 @@ body {
 }
 
 .ir1-item1, .ir1-item2, .ir1-item3 {
-    width: 100%;
-    margin-top: 3%;
-    /* border: solid red 1px; */
+    margin-top: 0%;
 }
 
 .ir1-item1 {
-    background-image: linear-gradient( to left, rgba(55, 41, 41, 0), rgba(55, 41, 41, 1));
-    clip-path: ellipse(100% 99% at left);
-    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    font-size: 300%;
-    cursor: pointer;
     
+    justify-content: left;
+    display: flex;
+    width: 30%;
+    height: auto;
+
     transition: 1s;
-    filter: hue-rotate(0deg);
-}
-.ir1-item1:hover{
-    filter: hue-rotate(180deg);
-    font-size: 350%;
 }
 
 .ir1-item2 {
-    width:100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-    transition: 1s;
-    filter: hue-rotate(0deg);
-
-}
-
-
-.ir1-item3 {
-    background-image: linear-gradient( to right, rgba(55, 41, 41, 0), rgba(55, 41, 41, 1));
-    clip-path: ellipse(100% 99% at right);
-    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    font-size: 300%;
-    cursor: pointer;
-    
-    transition: 1s;
-    filter: hue-rotate(0deg);
-}
-.ir1-item3:hover{
-    filter: hue-rotate(180deg);
-    font-size: 350%;
-}
-
-.pfp {
-    width: 80%;
-    height: auto;
-    clip-path: ellipse(90% 50% at center);
-}
-.index-pfp-boxshadow {
-    height: 100%;
-    width: 80%;
-    position: absolute;
-    clip-path: ellipse(90% 50% at center);
-    box-shadow: 0 0vh 3vh 2vh rgba(55, 41, 41, 1);
-
-    transition: 1s;
-    filter: hue-rotate(0deg);
-}
-.index-pfp-boxshadow:hover{
-    filter: hue-rotate(180deg);
-}
-
-.index-row-2 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-}
-
-.ir2-item1 {
-    width: 100%;
-    margin-top: 2%;
-    /* border: solid red 1px;  */
-
-}
-
-.ir2-item1 {
-    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    font-size: 200%;
-}
-
-
-.index-row-3 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-}
-
-.ir3-item1, .ir3-item2, .ir3-item3 {
-    width: 100%;
+    width: 60%;
     margin-top: 2%;
     margin-bottom: 4%;
     font-size: 150%;
     text-align: center;
     color: #fff;
     font-family: Verdana, sans-serif, Tahoma;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 
-} 
+.my-name-is {
+    font-size: 160%;
+    font-family: Tahoma, sans-serif, Verdana;
+}
 
-/* .name {
-    do some shit with the filter: huerotation function to do some thing similar to jude.
-} */
+.pfp {
+    width: 80%;
+    height: auto;
+    clip-path: ellipse(100% 90% at left);
+}
