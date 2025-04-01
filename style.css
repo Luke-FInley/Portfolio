@@ -34,7 +34,7 @@ body {
     font-size: 100%;
     position:fixed;
     bottom: 0;
- }
+}
 
 .resume, .name, .portfolio {
     width: 15%;
@@ -54,7 +54,7 @@ body {
     /* border: red solid 1px; */
 }
 
-.my-name, .resume-text, .portfolio-text {
+.my-name, .resume-text, .portfolio-text, .contact-me {
     width: 20%;
     animation: rainbow-name 3s;
     animation-iteration-count: infinite;
@@ -69,18 +69,15 @@ body {
     to {filter: hue-rotate(360deg);}
 }
 
-.my-name-white, .resume-text-white, .portfolio-text-white {
+.my-name-white, .resume-text-white, .portfolio-text-white, .contact-me-white {
     width: 20%;
-    animation: rainbow-name 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
     position: absolute;
     top: 1%;
     left: 40%;
     transition: .4s;
 }
 
-.my-name-white:hover, .resume-text-white:hover, .portfolio-text-white:hover {
+.my-name-white:hover, .resume-text-white:hover, .portfolio-text-white:hover, .contact-me-white:hover {
     opacity: 0;
 }
 
@@ -99,7 +96,25 @@ body {
 
 }
 
-
+.contact-me-container {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 5%;
+}
+.contact-me {
+    position: relative;
+    top: 0;
+    left: 10%;
+    transform: scale(2);
+}
+.contact-me-white {
+    position: relative;
+    top: 0;
+    left: -10%;
+    float: left;
+    transform: scale(2);
+}
 
 .active {
     opacity: 1;
@@ -168,6 +183,23 @@ body {
 
 .spacer {
     height: 8vh;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 100%vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 200%;
+    border: blue solid 1px;
+}
+.contact-list-item {
+    margin: 5%;
+    border: solid red 1px;
 }
 
 .index-container-main {

@@ -71,12 +71,8 @@ function goToName() {
     window.location.href = "index.html";
 }
 
-document.getElementById("portfolioNav").addEventListener("click", goToPortfolio);
-
-document.getElementById("resumeNav").addEventListener("click", goToResume);
-
-document.getElementById("aboutMeNav").addEventListener("click", goToAboutMe);
-function goToAboutMe() {
-    window.scrollTo(0, 800);
+document.getElementById("contactMeNav").addEventListener("click", goToContactMe);
+function goToContactMe() {
+    window.location.href = "ContactMe.html";
 }
 
