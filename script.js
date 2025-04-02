@@ -76,3 +76,15 @@ function goToContactMe() {
     window.location.href = "ContactMe.html";
 }
 
+function goToLinkedin() {
+    window.open("https://www.linkedin.com/in/luke-finley/");
+}
+
+function copyPhoneNumber() {
+    navigator.clipboard.writeText("972-832-7822");
+    alert("Successfully Copied 972-832-7822");
+}
+function copyEmail() {
+    navigator.clipboard.writeText("luke.finley422@gmail.com");
+    alert("Successfully Copied luke.finley422@gmail.com");
+}
