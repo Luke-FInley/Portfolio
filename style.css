@@ -5,7 +5,8 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-color: hsl(20, 8%, 8%);
+    background-image: url("General/Background.png");
+    background-repeat: repeat;
 }
 
 .nav {
@@ -123,7 +124,7 @@ body {
 }
 
 .project-title {
-    background-color: rgb(109, 29, 29);
+    background-image: linear-gradient(160deg, rgb(109, 29, 29), rgb(21, 19, 18));
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 200%;
     height: 15%;
@@ -167,7 +168,7 @@ body {
 }
 
 .spacer {
-    height: 8vh;
+    height: 3vh;
 }
 
 .contact-info {
@@ -346,15 +347,15 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    height: 20%;
+    height: 10%;
     font-style: italic;
     font-size: 150%;
     border-bottom: #fff solid .25vh;
     padding-bottom: 2%;
-    padding-top: 8%;
+    padding-top: 0%;
 }
 .process-body{
-    height: 50%;
+    height: 100%;
     display: flex;
     align-items: top;
     padding-top: 2%;
