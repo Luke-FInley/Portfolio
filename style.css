@@ -5,7 +5,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-color: #151312;
+    background-color: hsl(20, 8%, 8%);
 }
 
 .nav {
@@ -14,8 +14,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #1F1C1C;
-    margin: 0;
-    padding: 0;
+    margin: 0vh;
+    padding: 0vh;
     border: none;
     height: 10vh;
     position:sticky;
@@ -51,7 +51,6 @@ body {
     cursor: pointer;
     transition: .4s;
     text-align: center;
-    /* border: red solid 1px; */
 }
 
 .my-name, .resume-text, .portfolio-text, .contact-me {
@@ -60,7 +59,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     position: absolute;
-    top: 1%;
+    top: 8%;
     left: 40%;
 }
 
@@ -72,7 +71,7 @@ body {
 .my-name-white, .resume-text-white, .portfolio-text-white, .contact-me-white {
     width: 20%;
     position: absolute;
-    top: 1%;
+    top: 8%;
     left: 40%;
     transition: .4s;
 }
@@ -81,19 +80,17 @@ body {
     opacity: 0;
 }
 
-.name {
-    width: 20%;
-}
-
 .resume-text, .resume-text-white {
     left: 70%;
-    transform: scale(.7);
+    transform: scale(.85);
 }
-
 .portfolio-text, .portfolio-text-white {
     left: 10%;
-    transform: scale(.7);
+    transform: scale(.85);
 
+}
+.my-name, .my-name-white {
+    transform: scale(.85);
 }
 
 .contact-me-container {
@@ -116,10 +113,6 @@ body {
     transform: scale(2);
 }
 
-.active {
-    opacity: 1;
-}
-
 .projects {
     display: flex;
     flex-direction: row;
@@ -130,7 +123,7 @@ body {
 }
 
 .project-title {
-    background-color: #201111;
+    background-color: rgb(109, 29, 29);
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 200%;
     height: 15%;
@@ -145,7 +138,7 @@ body {
 }
 
 .project-body {
-    background-color: rgb(55, 41, 41);
+    background-color: rgb(49, 39, 39);
     height: auto;
     width: auto;
     cursor: pointer;
@@ -158,15 +151,12 @@ body {
     margin: 0;
     columns: 0;
 
-    /* box-shadow: 1vh 1vh 3vh 0 rgba(0,0,0,0.35); */
-    box-shadow: 0vh 0vh 0vh 0 rgba(0,0,0,0.35);
-
     transition: .6s;
 
 }
 
 .project-container:hover {
-    animation: rainbow-name 2s;
+    animation: rainbow-name 6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transform: scale(.95);
@@ -261,4 +251,111 @@ body {
 
 .pfp {
     width: 100%;
+}
+
+.project-section-one, .project-section-two {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.project-header {
+    margin: 0;
+    padding: 1.5%;
+    text-align: left;
+    padding-left: 15%;
+    background-image: linear-gradient(to right, rgb(109, 29, 29), rgb(21, 19, 18));
+    color: #fff;
+    font-size: 500%;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.project-overview {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+
+}
+.project-rundown {
+    display: flex;
+    width: 42%;
+    color: #fff;
+    font-family: Tahoma, sans-serif, Verdana;
+    align-items: center;
+    text-wrap: wrap;
+    font-size: 170%;
+    padding-left: 4%;
+    padding-right: 4%;
+    align-items: center;
+}
+.final-product {
+    width: 50%;
+    display: block;
+}
+.product-embed {
+    border: none;
+}
+
+
+
+.project-process-header {
+    margin: 0;
+    padding: 1.5%;
+    text-align: right;
+    padding-right: 15%;
+    background-image: linear-gradient(to left, rgb(109, 29, 29), rgb(21, 19, 18));
+    color: #fff;
+    font-size: 500%;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.project-process {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.process-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+
+}
+.process-column-one-item, .process-column-two-item {
+    width: 50%;
+    padding: 2%;
+    color: #fff;
+    font-family: Tahoma, sans-serif, Verdana;
+    align-items: right;
+    display: flex;
+    flex-direction: column;
+    font-size: 170%;
+    height: auto;
+}
+.process-column-one-item {
+    align-items: center;
+}
+
+.process-subhead{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 20%;
+    font-style: italic;
+    font-size: 150%;
+    border-bottom: #fff solid .25vh;
+    padding-bottom: 2%;
+    padding-top: 8%;
+}
+.process-body{
+    height: 50%;
+    display: flex;
+    align-items: top;
+    padding-top: 2%;
 }
