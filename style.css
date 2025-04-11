@@ -162,7 +162,12 @@ body {
     margin: 0;
     columns: 0;
 
-    transition: .6s;
+    transition: .3s;
+    transition-timing-function:linear ;
+
+    outline: .1vh solid;
+    outline-color: rgb(255, 255, 255, 0);
+    outline-offset: .1vh;
 
 }
 
@@ -170,7 +175,10 @@ body {
     animation: rainbow-name 6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    transform: scale(.95);
+    /* transform: scale(.95); */
+    outline: 1.2vh solid;
+    outline-color: rgb(255, 255, 255);
+    outline-offset: -1.2vh;
 }
 
 .project-container:active {
@@ -576,6 +584,13 @@ li {
         top: 3vh;
         scale: 1.5;
     }
+
+    .contact-me-container {
+        height: auto;
+        width: 60vh;
+        scale: 1.5;
+        margin-bottom: 6vh;
+    }
     
     .project-container {
         width: 50%;
@@ -683,6 +698,13 @@ li {
     
     .portfolio-text, .portfolio-text-white, .my-name, .my-name-white, .resume-text, .resume-text-white {
         top: 1vh;
+    }
+}
+@media (max-width: 1350px) {
+    .index-row-one {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
