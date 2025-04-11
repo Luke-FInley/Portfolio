@@ -35,6 +35,12 @@ body {
     font-size: 100%;
     position:fixed;
     bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.contact-me-footer {
+    cursor: pointer;
 }
 
 .resume, .name, .portfolio {
@@ -265,11 +271,11 @@ body {
 }
 
 .back-to-projects {
-    position: absolute;
-    left: 2%;
+    position: relative;
+    left: -15%;
     font-size: 50%;
-    display: flex;
-    align-items: center;
+    display: block;
+    align-items: flex-start;
     height: 10vh;
     width: 10vh;
     cursor: pointer;
@@ -392,7 +398,21 @@ body {
     font-size: 90%;
 }
 
+.resume-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.resume-img {
+    cursor: pointer;
 
+    transition: .5s;
+    opacity: .5;
+}
+.resume-img:hover {
+    opacity: 1;
+}
 
 .resume-container-main {
     display: flex;
@@ -544,3 +564,153 @@ li {
     text-wrap: wrap;
     margin-bottom: 5%;
 }
+
+
+
+@media (orientation: portrait) {
+    
+    .nav {
+        height: 8vh;
+    }
+    .portfolio-text, .portfolio-text-white, .my-name, .my-name-white, .resume-text, .resume-text-white {
+        top: 3vh;
+        scale: 1.5;
+    }
+    
+    .project-container {
+        width: 50%;
+    }
+
+    .project-overview {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+    .project-rundown {
+        font-size: 120%;
+        margin:3% ;
+        width: 75%;
+    }
+    .final-product {
+        margin-bottom: 3%;
+        width: 75%;
+    }
+    .splat {
+        font-size: 40%;
+        align-items: center;
+        display: flex;
+    }
+    .back-to-projects {
+        width: 6vh;
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .project-process-header {
+        font-size: 300%;
+    }
+    .project-process {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 1%;
+    }
+    .process-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .process-column-one-item, .process-column-two-item {
+        width: 85%;
+    }
+    .process-column-two-item {
+        border-bottom: #fff solid .3vh;
+        margin-bottom: 7%;
+    }
+    .footer {
+        font-size: 80%;
+        height: 3vh;
+        align-items: center;
+    }
+
+
+    .index-row-one {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ir1-item1, .ir1-item2 {
+        width: 85%;
+    }
+
+
+    .resume-container {
+        width: 100%;
+        justify-content: center;
+        align-items:flex-start;
+    }
+    .resume-img {
+        width: 80%;
+        height: auto;
+        opacity: .9;
+    }
+
+}
+
+@media (max-width: 1000px) and (min-width: 750px) {
+    
+    .portfolio-text, .portfolio-text-white, .my-name, .my-name-white, .resume-text, .resume-text-white {
+        top: 2vh;
+        scale: 1;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1600px) {
+    
+    .portfolio-text, .portfolio-text-white, .my-name, .my-name-white, .resume-text, .resume-text-white {
+        top: 2vh;
+    }
+    .resume-img {
+        opacity: .9;
+    }
+}
+@media (min-width: 1350px) {
+    
+    .portfolio-text, .portfolio-text-white, .my-name, .my-name-white, .resume-text, .resume-text-white {
+        top: 1vh;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 750px) {
+    
+    .project-container {
+        width: 100%;
+    }
+    .project-title {
+        font-size: 150%;
+    }
+
+
+
+    .resume-img {
+        width: 100%;
+        height: auto;
+        opacity: .9;
+    }
+
+}
+
+@media (max-width: 350px) {
+    
+    .project-title {
+        font-size: 100%;
+    }
+
+}
+
+

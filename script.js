@@ -79,6 +79,9 @@ function goToContactMe() {
 function goToLinkedin() {
     window.open("https://www.linkedin.com/in/luke-finley/");
 }
+function resumeNav() {
+    window.open("https://docs.google.com/document/d/1E1ebKMl93lr6hNOr-qxnOSpy_4qvv32xpj9boQy6kiY/edit?usp=sharing");
+}
 
 function copyPhoneNumber() {
     navigator.clipboard.writeText("972-832-7822");
