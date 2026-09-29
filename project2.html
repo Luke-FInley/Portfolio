@@ -5,229 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>LukeFinley</title>
+    <title>Luke Finley</title>
 </head>
 
 <body>
 
-    <div class="nav"> 
-        
-        <div id="portfolio" class="portfolio">
-            <div>
-                <img class="portfolio-text" src="AboutMe/PORTFOLIO.png" alt="Portfolio">
-                <img class="portfolio-text-white" src="AboutMe/PORTFOLIO-White.png" alt="Portfolio">
+    <nav id="navbar">
+
+        <div class="home-button" id="home">
+            H o m e
+        </div>
+
+
+        <div class="contact-button" id="contact">
+            C o n t a c t
+        </div>
+
+    </nav>
+
+
+    <div class="project-text-main">
+
+        <div class="project-title">
+            S P L A T
+        </div>
+
+        <div class="project-attributes">
+            <div class="attribute">
+                Vidiography
+            </div>
+            <div class="attribute">
+                Engineering
+            </div>
+            <div class="attribute">
+                Improvisation
             </div>
         </div>
 
-        <div id="name" class="name">
-            <div>
-                <img class="my-name" src="AboutMe/LUKEFINLEY.png" alt="My name: Luke Finley">
-                <img class="my-name-white" src="AboutMe/LUKEFINLEY-White.png" alt="My name: Luke Finley">                
-            </div>
-        </div>
+        <div class="project-description">
 
-        <div id="resume" class="resume">
-            <div>
-                <img class="resume-text" src="AboutMe/RESUME.png" alt="Resume">
-                <img class="resume-text-white" src="AboutMe/RESUME-White.png" alt="Resume">
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <div class="project-info-container">
-
-        <div class="project-section-one">
-
-            <div class="project-header">
-
-                <div class="back-to-projects" onclick="goToPortfolio()">
-                    
-                </div>
-
-                <div class="splat">
-                    Atom's Beta Test
-                </div>
-            </div>
-
-            <div class="project-overview">
-
-                <div class="project-rundown">
-                    <div>
-                        Atom is a character from the 2011 movie Real Steel starring Hugh Jackman and Dakota Goyo. As a kid I was obsessed with the movie. Watching Real Steel is the first time I can recall recognizing CGI as a cool and creative element of media. It inspired me, even back then!
-
-                        <br>
-                        <br>
-
-                        Fast forward to Fall 2024: I had a class that was teaching us the basics of 3D modeling softwares such as Blender and Cinema4D. And for one of my projects, I chose to revisit that old inspiration. 
-
-                    </div>
-
-                </div>
-
-                <div class="final-product">
-                    <iframe class="product-embed" height="100%" width="100%" src="https://www.youtube.com/embed/PfX5SlDHFJA?mute=1">
-                    </iframe>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="project-section-two">
-
-            <div class="project-process-header">
-                The Process
-            </div>
-
-            <div class="project-process">
-
-                <div class="process-row">
-                    
-                    <div class="process-column-one-item">
-
-                        <img width="100%" src="Process/AtomsBetaTest/RealSteel.png" alt="Screenshot of Premiere Pro">
-
-                    </div>
-
-                    <div class="process-column-two-item">
-
-                        <div class="process-subhead">
-
-                            The Inspiration
-
-                        </div>
-
-                        <div class="process-body">
-
-                            In the movie, Real Steel, Atom is a boxing robot found in a scrap yard. This 'short film' project is my take on what happened to Atom before he ended up in that scrap yard.
-
-                            <br>
-                            <br>
-
-                            I also revisited this movie because I had just rewatched it a month or so prior to the project being assigned. The movie mentions that Atom's model was sold by a company by Hammerhead Industries, hence the ending of the film with Atom being bought up by said company.
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="process-row">
-                    
-                    <div class="process-column-one-item">
-
-                        <img width="100%" src="Process/AtomsBetaTest/Storyboard.jpg" alt="Picture of myself and camera man Jude">
-
-                    </div>
-
-                    <div class="process-column-two-item">
-
-                        <div class="process-subhead">
-
-                            Storyboarding
-
-                        </div>
-
-                        <div class="process-body">
-
-                            The initial storyboard for the film was made to be a silent film. The concept being that Atom's creator (me) would make videos testing Atom's capabilities with a test number in the corner of each shot.
-                    
-                            <br>
-                            <br>
-                            
-                            The initial intent was to have Atom continue to break and glitch until eventually he works and I celebrate. 
-                            This pivoted to the final idea when I realized I didn't have enough time to make two minutes of animations and their render times. I also got the idea of Hammerhead Industries buying up Atom at this time. So I decided to pivot to a spoken dev-log instead with some select recordings.
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="process-row">
-                    
-                    <div class="process-column-one-item">
-
-                        <img width="100%" src="Process/AtomsBetaTest/Rokoko.jpg" alt="Picture of the home made camera rig">
-
-                    </div>
-
-                    <div class="process-column-two-item">
-
-                        <div class="process-subhead">
-
-                            Experimentation
-
-                        </div>
-
-                        <div class="process-body">
-
-                            My initial thought for creating these scenes with Atom was to use a program called Rokoko Studio. Rokoko offers AI motion and body tracking data without the need of a suit, however, the results from my tests were not great. So, I moved on to Mixamo and hand animating.
-                            
-                            <br>
-                            <br>
-                            
-                            The reason Rokoko didn't work out was because I only had a single camera, while Rokoko recommends at least two at different angles.
-                            
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-                <div class="process-row">
-                    
-                    <div class="process-column-one-item">
-
-                        <img width="100%" src="Process/AtomsBetaTest/Premiere.jpg" alt="Picture of the home made camera rig">
-
-                    </div>
-
-                    <div class="process-column-two-item">
-
-                        <div class="process-subhead">
-
-                            Compositing
-
-                        </div>
-
-                        <div class="process-body">
-
-                            I recorded everything at night because I found compositing in the dark with few light sources to be far easier to make convincing results. After rendering out all of my animations, I initially took them into After Effects to fix some of the lighting and reflections on Atom, before exporting those into Premiere Pro. 
-                            
-                            <br>
-                            <br>
-                            
-                            Premiere is where I did my Dev Log recordings with several outfit changes and changes in my tone of voice in an attempt to make it feel like the logs were taken far apart. I finalized the product with an adjustment layer with a sepia filter.
-                            
-                        </div>
-
-                    </div>
-
-            </div>
+            In 2025 I took a class that honed my skills in Adobe Premiere Pro, Adobe After Effects, and Blender. For my first major project I decided to make a music video for the song SPLAT, by Connor Price. <br> This was my first major project of the class which only used Adobe Premiere Pro. I also took it upon myself to engineer a camera mount for my phone attached to a pivot point in order to properly capture certain shots.
 
         </div>
 
     </div>
 
-    <div class="spacer"></div>
-
-    <footer class="footer">
+    <div class="project-images project-embeds">
         
-        <div>
-            2025 Luke Finley's Portfolio. All Rights Reserved.
+        <div class="embeds">
+
+            <iframe class="embed" src="https://www.youtube.com/embed/sabvWhn5hs8" width="50%">
+            </iframe>
+
         </div>
+        
 
-        <div class="contact-me-footer" onclick="goToContactMe()">
-            Contact Me
-        </div>
+    </div>
 
-    </footer>
-
+    
 
 </body>
 
